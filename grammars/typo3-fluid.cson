@@ -1,0 +1,28 @@
+scopeName: 'source.fluid'
+name: 'TYPO3 Fluid'
+fileTypes: [ 'html' ]
+limitLineLength: false
+
+patterns: [
+  {
+    comment: 'Opening tag'
+    begin: '(?i)(<?)((f):(cache|format|alias|case|count|cycle|defaultCase|else|for|groupedFor|if|inline|layout|or|render|section|spaceless|then|switch|variable)(\\.(disable|static|warmup|cdata|htmlspecialchars|html|printf|raw))?)(?=\\s|/?>)'
+    beginCaptures:
+        1: name: 'punctuation.definition.tag.begin.fluid'
+        2: name: 'entity.name.tag.inline.$2.fluid'
+        3: name: 'entity.name.namespace.fluid'
+        4: name: 'entity.name.trait.fluid'
+        5: name: 'punctuation.separator.fluid'
+        6: name: 'entity.name.section.fluid'
+    end: '((?: ?/)?>)'
+    endCaptures:
+      0:
+        name: 'punctuation.definition.tag.end.fluid'
+    name: 'meta.tag.inline.$2.fluid'
+    patterns: [
+          {
+            include: 'text.html.basic#tag-stuff'
+          }
+    ]
+  }
+]
