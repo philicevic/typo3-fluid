@@ -9,12 +9,13 @@
       "extbase",
       "language",
       "grammar",
-      "html"
+      "html",
+      "syntax"
   ],
   "activationCommands": {
     "atom-workspace": "typo3-fluid:toggle"
   },
-  "repository": "https://github.com/atom/typo3-fluid",
+  "repository": "https://github.com/philicevic/typo3-fluid",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
