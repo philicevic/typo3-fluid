@@ -1,0 +1,4 @@
+'.source.fluid':
+    'editor':
+        'commentStart': '<f:comment>'
+        'commentEnd': '</f:comment>'
