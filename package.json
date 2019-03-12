@@ -1,0 +1,24 @@
+{
+  "name": "typo3-fluid",
+  "main": "./lib/typo3-fluid",
+  "version": "0.1.0",
+  "description": "Syntax highlighting and snippets for TYPO3 Fluid",
+  "keywords": [
+      "typo3",
+      "fluid",
+      "extbase",
+      "language",
+      "grammar",
+      "html"
+  ],
+  "activationCommands": {
+    "atom-workspace": "typo3-fluid:toggle"
+  },
+  "repository": "https://github.com/atom/typo3-fluid",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

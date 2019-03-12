@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle typo3-fluid",
+        "command": "typo3-fluid:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "typo3-fluid",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "typo3-fluid:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
